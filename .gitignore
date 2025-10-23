@@ -34,3 +34,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# documentation (internal only)
+/docs
+
+# claude AI assistant folder
+/.claude
+.mcp.json
+
+# IDE
+.idea/
