@@ -17,13 +17,13 @@ export function Pattern6() {
             Parent Container has this className:
           </p>
           <code className="text-sm bg-orange-900 text-orange-100 px-3 py-1 rounded font-mono block">
-            className="[&{">"}p[class='special']]:text-orange-600"
+            className=&quot;[&{">"}p[class=&apos;special&apos;]]:text-orange-600&quot;
           </code>
           <p className="text-xs text-orange-700 mt-2">
-            This means: "Select{" "}
+            This means: &quot;Select{" "}
             <code className="bg-orange-200 px-1 rounded">p</code> tags with{" "}
-            <code className="bg-orange-200 px-1 rounded">class="special"</code>{" "}
-            that are DIRECT children of me"
+            <code className="bg-orange-200 px-1 rounded">class=&quot;special&quot;</code>{" "}
+            that are DIRECT children of me&quot;
           </p>
           <p className="text-xs text-orange-700 mt-1 font-semibold">
             ⚠️ BOTH conditions must be true: (1) Direct child AND (2) Has the
@@ -48,13 +48,13 @@ className="[&>p.special]:text-orange-600"  ← Shorter, same result!`}
 
         <div className="[&>p[class='special']]:text-orange-600 [&>p[class='special']]:font-bold [&>p[class='special']]:bg-orange-100 [&>p[class='special']]:px-3 [&>p[class='special']]:py-1 [&>p[class='special']]:rounded border-2 border-purple-400 bg-purple-50 p-6 rounded-lg space-y-4">
           <p className="text-xs text-purple-700 font-semibold mb-4">
-            ⬇️ This purple box is the PARENT with className="[&{">"}
-            p[class='special']]..."
+            ⬇️ This purple box is the PARENT with className=&quot;[&{">"}
+            p[class=&apos;special&apos;]]...&quot;
           </p>
 
           <VisualBox selected={false} label="<p> (no class)">
             <p className="text-lg">
-              ❌ Not styled - I'm a direct child but have NO class
+              ❌ Not styled - I&apos;m a direct child but have NO class
             </p>
           </VisualBox>
 
@@ -63,7 +63,7 @@ className="[&>p.special]:text-orange-600"  ← Shorter, same result!`}
             label='<p class="special"> (direct child of parent)'
           >
             <p className="special text-lg">
-              ✅ ORANGE! I'm a direct child AND have class="special"
+              ✅ ORANGE! I&apos;m a direct child AND have class=&quot;special&quot;
             </p>
           </VisualBox>
 
@@ -77,7 +77,7 @@ className="[&>p.special]:text-orange-600"  ← Shorter, same result!`}
               label='<p class="special"> (nested in div)'
             >
               <p className="special text-lg">
-                ❌ Not styled - I have class="special" but I'm NOT a direct
+                ❌ Not styled - I have class=&quot;special&quot; but I&apos;m NOT a direct
                 child of parent
               </p>
             </VisualBox>

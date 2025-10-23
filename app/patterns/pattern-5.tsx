@@ -17,14 +17,14 @@ export function Pattern5() {
             Parent Container has this className:
           </p>
           <code className="text-sm bg-green-900 text-green-100 px-3 py-1 rounded font-mono block">
-            className="[&_[data-active='true']]:bg-green-100"
+            className=&quot;[&_[data-active=&apos;true&apos;]]:bg-green-100&quot;
           </code>
           <p className="text-xs text-green-700 mt-2">
             Target: Any{" "}
             <code className="bg-green-200 px-1 rounded">button</code> element
             with{" "}
             <code className="bg-green-200 px-1 rounded">
-              data-active="true"
+              data-active=&quot;true&quot;
             </code>{" "}
             attribute
           </p>
