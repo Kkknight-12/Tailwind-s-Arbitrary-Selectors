@@ -125,7 +125,7 @@ export default function Home() {
                     <code className="text-lg font-mono bg-green-100 px-3 py-1 rounded text-green-800">[&>p]</code>
                     <p className="text-sm text-gray-600 mt-2">
                       <code className="bg-gray-100 px-2 py-0.5 rounded">&</code> (this element) +
-                      <code className="bg-gray-100 px-2 py-0.5 rounded mx-1">></code> (direct child) +
+                      <code className="bg-gray-100 px-2 py-0.5 rounded mx-1">{'>'}</code> (direct child) +
                       <code className="bg-gray-100 px-2 py-0.5 rounded">p</code>
                     </p>
                   </div>
@@ -332,7 +332,7 @@ export default function Home() {
                 after={
                   <div className="text-center">
                     <code className="text-lg font-mono bg-red-100 px-2 py-1 rounded text-red-800 mb-2 inline-block">[&>p]</code>
-                    <p className="text-sm text-gray-600 mb-2">Direct child (&gt;)</p>
+                    <p className="text-sm text-gray-600 mb-2">Direct child ({'>'})</p>
                     <div className="mt-3 text-sm">
                       <div className="text-green-600 font-bold">✅ Direct children</div>
                       <div className="text-red-600 font-bold">❌ Grandchildren</div>
@@ -395,7 +395,7 @@ export default function Home() {
                   ⬅️ Yellow border = Direct child DIV of parent
                 </p>
                 <VisualBox selected={true} label='<p> inside direct child <div>'>
-                  <p className="text-lg">✅ YELLOW! Path: parent &gt; div &gt; p ✓</p>
+                  <p className="text-lg">✅ YELLOW! Path: parent {'>'} div {'>'} p ✓</p>
                 </VisualBox>
               </div>
 
@@ -406,7 +406,7 @@ export default function Home() {
                 <div className="border-l-2 border-gray-300 pl-4 mt-2">
                   <p className="text-xs text-gray-500 mb-2">↑ Nested div inside the gray div</p>
                   <VisualBox selected={false} label='<p> in nested div'>
-                    <p className="text-lg">❌ Not yellow - Path: parent &gt; div &gt; div &gt; p ✗</p>
+                    <p className="text-lg">❌ Not yellow - Path: parent {'>'} div {'>'} div {'>'} p ✗</p>
                   </VisualBox>
                 </div>
               </div>
