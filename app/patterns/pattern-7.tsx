@@ -17,7 +17,7 @@ export function Pattern7() {
             Element with selector has this className:
           </p>
           <code className="text-sm bg-blue-900 text-blue-100 px-3 py-1 rounded font-mono block">
-            className="[&+p]:text-blue-600 [&+p]:font-bold"
+            className=&quot;[&+p]:text-blue-600 [&+p]:font-bold&quot;
           </code>
           <p className="text-xs text-blue-700 mt-2">
             Target: The <code className="bg-blue-200 px-1 rounded">p</code>{" "}
@@ -31,7 +31,7 @@ export function Pattern7() {
           </p>
           <p className="text-xs text-blue-700 mt-2 font-semibold">
             Note: <code className="bg-blue-200 px-1 rounded">+</code> means
-            "next sibling" (adjacent)
+            &quot;next sibling&quot; (adjacent)
           </p>
         </div>
 
@@ -51,12 +51,12 @@ export function Pattern7() {
           <div className="border-2 border-purple-400 bg-purple-50 p-6 rounded-lg">
             <div className="[&+p]:text-blue-600 [&+p]:font-bold [&+p]:bg-blue-100 [&+p]:px-3 [&+p]:py-1 [&+p]:rounded-lg inline-block border-2 border-blue-400 bg-blue-200 px-4 py-2 rounded">
               <p className="text-sm font-mono text-blue-900 font-semibold">
-                This div has className="[&+p]:..."
+                This div has className=&quot;[&+p]:...&quot;
               </p>
             </div>
             <VisualBox selected={true} label="Next sibling <p> (adjacent)">
               <p className="text-lg mt-4">
-                ✅ I'm BLUE! (immediately after the div)
+                ✅ I&apos;m BLUE! (immediately after the div)
               </p>
             </VisualBox>
             <VisualBox selected={false} label="Second <p> (not adjacent)">

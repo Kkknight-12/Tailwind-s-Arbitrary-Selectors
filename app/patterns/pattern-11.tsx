@@ -17,8 +17,8 @@ export function Pattern11() {
             Parent Container has this className:
           </p>
           <code className="text-sm bg-emerald-900 text-emerald-100 px-3 py-1 rounded font-mono block mb-2">
-            className="[&_p:first-child]:bg-green-100
-            [&_p:last-child]:bg-red-100"
+            className=&quot;[&_p:first-child]:bg-green-100
+            [&_p:last-child]:bg-red-100&quot;
           </code>
           <p className="text-xs text-emerald-700 mt-2">
             Target: <code className="bg-emerald-200 px-1 rounded">p</code>{" "}
@@ -54,7 +54,7 @@ export function Pattern11() {
         <div className="[&_p:first-child]:bg-green-100 [&_p:first-child]:border-green-400 [&_p:first-child]:font-bold [&_p:last-child]:bg-red-100 [&_p:last-child]:border-red-400 [&_p:last-child]:font-bold border-2 border-purple-400 bg-purple-50 p-6 rounded-lg space-y-4">
           <p className="text-xs text-purple-700 font-semibold mb-4">
             ⬇️ This purple box is the PARENT with
-            className="[&_p:first-child]:... [&_p:last-child]:..."
+            className=&quot;[&_p:first-child]:... [&_p:last-child]:...&quot;
           </p>
 
           <VisualBox selected={true} label="First child">

@@ -17,7 +17,7 @@ export function Pattern8() {
             Child element has this className:
           </p>
           <code className="text-sm bg-violet-900 text-violet-100 px-3 py-1 rounded font-mono block">
-            className="[.parent_&]:text-purple-600 [.parent_&]:font-bold"
+            className=&quot;[.parent_&]:text-purple-600 [.parent_&]:font-bold&quot;
           </code>
           <p className="text-xs text-violet-700 mt-2">
             Notice: <code className="bg-violet-200 px-1 rounded">.parent</code>{" "}
@@ -27,8 +27,8 @@ export function Pattern8() {
           <p className="text-xs text-violet-700 mt-1">
             Target: THIS element (
             <code className="bg-violet-200 px-1 rounded">&</code>), but ONLY
-            when it's inside an ancestor with{" "}
-            <code className="bg-violet-200 px-1 rounded">class="parent"</code>
+            when it&apos;s inside an ancestor with{" "}
+            <code className="bg-violet-200 px-1 rounded">class=&quot;parent&quot;</code>
           </p>
           <p className="text-xs text-violet-700 mt-1">
             Styling:{" "}
@@ -59,7 +59,7 @@ export function Pattern8() {
 
         <div className="parent border-2 border-indigo-400 bg-indigo-50 p-6 rounded-lg">
           <p className="text-sm font-mono text-indigo-900 mb-4 font-semibold">
-            ⬇️ This is a div with class="parent" (ancestor) - This label text is
+            ⬇️ This is a div with class=&quot;parent&quot; (ancestor) - This label text is
             NOT affected by the selector!
           </p>
           <p className="text-xs text-indigo-700 mb-4">
@@ -68,20 +68,20 @@ export function Pattern8() {
           </p>
           <VisualBox selected={true} label="Child has [.parent_&] selector">
             <div className="[.parent_&]:text-purple-600 [.parent_&]:font-bold [.parent_&]:bg-purple-200 [.parent_&]:px-3 [.parent_&]:py-1 [.parent_&]:rounded text-lg">
-              ✅ I'm purple! I have className="[.parent_&]:..." and I'm inside
-              an ancestor with class="parent"
+              ✅ I&apos;m purple! I have className=&quot;[.parent_&]:...&quot; and I&apos;m inside
+              an ancestor with class=&quot;parent&quot;
             </div>
           </VisualBox>
         </div>
 
         <div className="border-2 border-gray-300 bg-gray-50 p-6 rounded-lg">
           <p className="text-sm font-mono text-gray-600 mb-4 font-semibold">
-            ⬇️ This div has NO "parent" class (it's just a regular div)
+            ⬇️ This div has NO &quot;parent&quot; class (it&apos;s just a regular div)
           </p>
           <VisualBox selected={false} label="Child has [.parent_&] selector">
             <div className="[.parent_&]:text-purple-600 [.parent_&]:font-bold [.parent_&]:bg-purple-200 [.parent_&]:px-3 [.parent_&]:py-1 [.parent_&]:rounded text-lg">
-              ❌ NOT purple - I have className="[.parent_&]:..." but there's NO
-              ancestor with class="parent"
+              ❌ NOT purple - I have className=&quot;[.parent_&]:...&quot; but there&apos;s NO
+              ancestor with class=&quot;parent&quot;
             </div>
           </VisualBox>
         </div>

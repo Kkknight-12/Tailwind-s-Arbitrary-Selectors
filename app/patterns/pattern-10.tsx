@@ -17,7 +17,8 @@ export function Pattern10() {
             Parent Container has this className:
           </p>
           <code className="text-sm bg-pink-900 text-pink-100 px-3 py-1 rounded font-mono block">
-            className="[&_p:hover]:bg-gradient-to-r [&_p:hover]:from-pink-100"
+            className=&quot;[&_p:hover]:bg-gradient-to-r
+            [&_p:hover]:from-pink-100&quot;
           </code>
           <p className="text-xs text-pink-700 mt-2">
             Target: ALL <code className="bg-pink-200 px-1 rounded">p</code>{" "}
@@ -51,7 +52,8 @@ export function Pattern10() {
 
         <div className="[&_p:hover]:bg-gradient-to-r [&_p:hover]:from-pink-100 [&_p:hover]:to-purple-100 [&_p:hover]:scale-105 [&_p:hover]:shadow-lg border-2 border-purple-400 bg-purple-50 p-6 rounded-lg space-y-4">
           <p className="text-xs text-purple-700 font-semibold mb-4">
-            ⬇️ This purple box is the PARENT with className="[&_p:hover]:..."
+            ⬇️ This purple box is the PARENT with
+            className=&quot;[&_p:hover]:...&quot;
           </p>
           <p className="text-sm text-gray-600 mb-4 font-semibold">
             👇 Hover over these paragraphs to see the effect!

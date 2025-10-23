@@ -39,7 +39,7 @@ export default function Home() {
 
         <div className="relative max-w-4xl mx-auto text-center px-6 py-16">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 animate-fade-in">
-            Mastering Tailwind's
+            Mastering Tailwind&apos;s
             <br />
             <code className="text-5xl md:text-6xl font-mono">[&_selector]</code>
             <br />
@@ -56,7 +56,7 @@ export default function Home() {
             style={{ animationDelay: "0.4s" }}
           >
             Learn how to style third-party HTML, markdown content, and library
-            components with Tailwind's powerful arbitrary selector syntax.
+            components with Tailwind&apos;s powerful arbitrary selector syntax.
           </p>
         </div>
       </section>
@@ -70,14 +70,14 @@ export default function Home() {
           </h2>
           <p className="text-lg text-gray-700 mb-4 leading-relaxed">
             Arbitrary selectors let you target child elements using CSS
-            selectors directly in Tailwind's className. They solve the common
-            problem of styling HTML you can't control—like Shiki code blocks,
-            markdown content, or third-party libraries.
+            selectors directly in Tailwind&apos;s className. They solve the
+            common problem of styling HTML you can&apos;t control—like Shiki
+            code blocks, markdown content, or third-party libraries.
           </p>
           <div className="bg-gradient-to-r from-blue-50 to-purple-50 border-l-4 border-blue-500 p-6 rounded-r-lg">
             <p className="text-gray-800 font-semibold mb-2">The Pattern:</p>
             <code className="text-lg font-mono text-purple-700">
-              className="[&_selector]:utility-class"
+              className=&quot;[&_selector]:utility-class&quot;
             </code>
           </div>
         </section>
@@ -97,7 +97,7 @@ export default function Home() {
                     The Ampersand
                   </h3>
                   <p className="text-sm text-blue-700">
-                    Represents "this element"
+                    Represents &quot;this element&quot;
                   </p>
                 </div>
               </div>
@@ -110,14 +110,14 @@ export default function Home() {
               </p>
               <div className="bg-white border border-blue-200 rounded p-3 text-sm">
                 <p className="font-mono text-blue-800 mb-2">
-                  className="[&_p]:text-red-600"
+                  className=&quot;[&_p]:text-red-600&quot;
                 </p>
                 <p className="text-gray-600">
-                  Means: "From{" "}
+                  Means: &quot;From{" "}
                   <span className="font-bold text-blue-700">
                     this element (&)
                   </span>
-                  , select p tags"
+                  , select p tags&quot;
                 </p>
               </div>
             </div>
@@ -130,7 +130,7 @@ export default function Home() {
                     The Underscore
                   </h3>
                   <p className="text-sm text-purple-700">
-                    Represents a "space" (descendant)
+                    Represents a &quot;space&quot; (descendant)
                   </p>
                 </div>
               </div>
@@ -138,12 +138,12 @@ export default function Home() {
                 <code className="bg-purple-200 px-2 py-1 rounded font-mono">
                   _
                 </code>{" "}
-                is Tailwind's way of writing a space (CSS descendant
+                is Tailwind&apos;s way of writing a space (CSS descendant
                 combinator).
               </p>
               <div className="bg-white border border-purple-200 rounded p-3 text-sm">
                 <p className="font-mono text-purple-800 mb-2">
-                  [&_p] = "& p" in CSS
+                  [&_p] = &quot;& p&quot; in CSS
                 </p>
                 <p className="text-gray-600">
                   The underscore becomes a{" "}
@@ -184,7 +184,8 @@ export default function Home() {
                       .parent p
                     </code>
                     <p className="text-xs text-blue-700 mt-2">
-                      = "Select p elements that are descendants of parent"
+                      = &quot;Select p elements that are descendants of
+                      parent&quot;
                     </p>
                   </div>
                 </div>
@@ -214,7 +215,8 @@ export default function Home() {
                       .parent {">"} p
                     </code>
                     <p className="text-xs text-green-700 mt-2">
-                      = "Select p elements that are DIRECT children of parent"
+                      = &quot;Select p elements that are DIRECT children of
+                      parent&quot;
                     </p>
                   </div>
                 </div>
@@ -247,7 +249,8 @@ export default function Home() {
                       .parent .child
                     </code>
                     <p className="text-xs text-violet-700 mt-2">
-                      = "Select this element when it's inside a .parent"
+                      = &quot;Select this element when it&apos;s inside a
+                      .parent&quot;
                     </p>
                   </div>
                 </div>
@@ -266,7 +269,7 @@ export default function Home() {
                   <code className="bg-yellow-100 px-2 py-0.5 rounded font-mono">
                     &
                   </code>{" "}
-                  = "this element" (the one with the className)
+                  = &quot;this element&quot; (the one with the className)
                 </span>
               </li>
               <li className="flex items-start gap-2">
@@ -275,7 +278,7 @@ export default function Home() {
                   <code className="bg-yellow-100 px-2 py-0.5 rounded font-mono">
                     _
                   </code>{" "}
-                  = "space" in CSS (descendant selector)
+                  = &quot;space&quot; in CSS (descendant selector)
                 </span>
               </li>
               <li className="flex items-start gap-2">
@@ -284,7 +287,7 @@ export default function Home() {
                   <code className="bg-yellow-100 px-2 py-0.5 rounded font-mono">
                     &_p
                   </code>{" "}
-                  = "from this element, select p descendants"
+                  = &quot;from this element, select p descendants&quot;
                 </span>
               </li>
               <li className="flex items-start gap-2">
@@ -293,7 +296,7 @@ export default function Home() {
                   <code className="bg-yellow-100 px-2 py-0.5 rounded font-mono">
                     .parent_&
                   </code>{" "}
-                  = "select this element when inside .parent"
+                  = &quot;select this element when inside .parent&quot;
                 </span>
               </li>
             </ul>
@@ -331,7 +334,7 @@ export default function Home() {
         <Pattern10 />
 
         {/* Pattern 11: First/Last Child Selector */}
-        <Pattern11/>
+        <Pattern11 />
 
         {/* Pattern 12: Not Selector (Negation) */}
         <Pattern12 />
@@ -344,8 +347,8 @@ export default function Home() {
           <div className="space-y-4 text-lg text-gray-700">
             <p>
               <span className="font-bold text-blue-600">✅ Use them for:</span>{" "}
-              Third-party HTML, markdown content, library components you can't
-              directly modify
+              Third-party HTML, markdown content, library components you
+              can&apos;t directly modify
             </p>
             <p>
               <span className="font-bold text-red-600">

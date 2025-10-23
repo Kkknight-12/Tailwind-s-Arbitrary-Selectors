@@ -50,7 +50,7 @@ export function Pattern5() {
         <div className="[&_[data-active='true']]:bg-green-100 [&_[data-active='true']]:border-green-400 [&_[data-active='true']]:font-bold border-2 border-purple-400 bg-purple-50 p-6 rounded-lg space-y-4">
           <p className="text-xs text-purple-700 font-semibold mb-4">
             ⬇️ This purple box is the PARENT with
-            className="[&_[data-active='true']]..."
+            className=&ldquo;[&_[data-active=&lsquo;true&lsquo;]]...&ldquo;
           </p>
 
           <VisualBox selected={false} label='<button data-active="false">'>
@@ -58,7 +58,7 @@ export function Pattern5() {
               data-active="false"
               className="px-4 py-2 border-2 rounded-lg text-lg"
             >
-              ❌ Inactive Button (data-active="false")
+              ❌ Inactive Button (data-active=&ldquo;false&ldquo;)
             </button>
           </VisualBox>
           <VisualBox selected={true} label='<button data-active="true">'>
@@ -66,7 +66,7 @@ export function Pattern5() {
               data-active="true"
               className="px-4 py-2 border-2 rounded-lg text-lg"
             >
-              ✅ Active Button (data-active="true" - SELECTED!)
+              ✅ Active Button (data-active=&ldquo;true&ldquo; - SELECTED!)
             </button>
           </VisualBox>
           <VisualBox selected={false} label='<button data-active="false">'>
@@ -74,7 +74,7 @@ export function Pattern5() {
               data-active="false"
               className="px-4 py-2 border-2 rounded-lg text-lg"
             >
-              ❌ Another Inactive (data-active="false")
+              ❌ Another Inactive (data-active=&ldquo;false&ldquo;)
             </button>
           </VisualBox>
         </div>
