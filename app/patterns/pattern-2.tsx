@@ -20,7 +20,7 @@ export function Pattern2() {
             Parent Container has this className:
           </p>
           <code className="text-sm bg-red-900 text-red-100 px-3 py-1 rounded font-mono block">
-            className="[&{">"}p]:text-red-600 [&{">"}p]:font-bold"
+            className=&quot;[&{">"}p]:text-red-600 [&{">"}p]:font-bold&quot;
           </code>
           <p className="text-xs text-red-700 mt-2">
             Notice: <code className="bg-red-200 px-1 rounded">&</code> = this
@@ -29,9 +29,9 @@ export function Pattern2() {
             !)
           </p>
           <p className="text-xs text-red-700 mt-1">
-            This means: "Select{" "}
+            This means: &quot;Select{" "}
             <code className="bg-red-200 px-1 rounded">p</code> tags that are
-            ONLY direct children (one level deep)"
+            ONLY direct children (one level deep)&quot;
           </p>
         </div>
 
@@ -58,13 +58,13 @@ export function Pattern2() {
               )}
             >
               <p className="text-xs text-purple-700 font-semibold mb-4">
-                ⬇️ This purple box is the PARENT with className="
-                {enabled ? "[&>p]:text-red-600" : "(selector disabled)"}"
+                ⬇️ This purple box is the PARENT with className=&quot;
+                {enabled ? "[&>p]:text-red-600" : "(selector disabled)"}&quot;
               </p>
 
               <VisualBox selected={enabled} label="Direct child <p>">
                 <p className="text-lg">
-                  ✅ RED when active (I'm a direct child!)
+                  ✅ RED when active (I&apos;m a direct child!)
                 </p>
               </VisualBox>
 
@@ -77,7 +77,7 @@ export function Pattern2() {
                   label="Grandchild <p> (inside <div>)"
                 >
                   <p className="text-lg">
-                    ❌ NOT red (I'm a grandchild, not direct!)
+                    ❌ NOT red (I&apos;m a grandchild, not direct!)
                   </p>
                 </VisualBox>
               </div>

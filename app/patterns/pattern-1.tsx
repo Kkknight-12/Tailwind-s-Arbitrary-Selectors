@@ -19,7 +19,7 @@ export function Pattern1() {
             Parent Container has this className:
           </p>
           <code className="text-sm bg-green-900 text-green-100 px-3 py-1 rounded font-mono block">
-            className="[&_p]:text-green-600 [&_p]:font-bold"
+            className=&quot;[&_p]:text-green-600 [&_p]:font-bold&quot;
           </code>
           <p className="text-xs text-green-700 mt-2">
             Remember: <code className="bg-green-200 px-1 rounded">&</code> =
@@ -27,9 +27,9 @@ export function Pattern1() {
             space (descendant)
           </p>
           <p className="text-xs text-green-700 mt-1">
-            This means: "Select ALL{" "}
+            This means: &quot;Select ALL{" "}
             <code className="bg-green-200 px-1 rounded">p</code> tags that are
-            descendants of me (at ANY depth)"
+            descendants of me (at ANY depth)&quot;
           </p>
         </div>
 
@@ -58,8 +58,8 @@ export function Pattern1() {
               )}
             >
               <p className="text-xs text-purple-700 font-semibold mb-4">
-                ⬇️ This purple box is the PARENT with className="
-                {enabled ? "[&_p]:text-green-600" : "(selector disabled)"}"
+                ⬇️ This purple box is the PARENT with className=&quot;
+                {enabled ? "[&_p]:text-green-600" : "(selector disabled)"}&quot;
               </p>
 
               <VisualBox selected={enabled} label="Direct child <p>">
