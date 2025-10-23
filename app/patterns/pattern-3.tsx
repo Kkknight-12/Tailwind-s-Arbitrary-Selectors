@@ -17,14 +17,14 @@ export function Pattern3() {
             Parent Container has this className:
           </p>
           <code className="text-sm bg-blue-900 text-blue-100 px-3 py-1 rounded font-mono">
-            className="[&{">"}div{">"}p]:text-yellow-700 [&{">"}div{">"}
-            p]:font-bold"
+            className=&quot;[&{">"}div{">"}p]:text-yellow-700 [&{">"}div{">"}
+            p]:font-bold&quot;
           </code>
           <p className="text-xs text-blue-700 mt-2">
-            This means: "Select{" "}
+            This means: &quot;Select{" "}
             <code className="bg-blue-200 px-1 rounded">p</code> tags that are
             inside a <code className="bg-blue-200 px-1 rounded">div</code> that
-            is a direct child of me"
+            is a direct child of me&quot;
           </p>
         </div>
 
@@ -47,8 +47,8 @@ export function Pattern3() {
 
         <div className="[&>div>p]:text-yellow-700 [&>div>p]:font-bold border-2 border-purple-400 bg-purple-50 p-6 rounded-lg space-y-4">
           <p className="text-xs text-purple-700 font-semibold mb-4">
-            ⬇️ This purple box is the PARENT with className="[&{">"}div{">"}
-            p]:..."
+            ⬇️ This purple box is the PARENT with className=&quot;[&{">"}div{">"}
+            p]:...&quot;
           </p>
 
           <VisualBox
@@ -56,7 +56,7 @@ export function Pattern3() {
             label="Direct <p> child of parent (no div wrapper)"
           >
             <p className="text-lg">
-              ❌ Not yellow - I'm a direct child of parent, not inside a div
+              ❌ Not yellow - I&apos;m a direct child of parent, not inside a div
             </p>
           </VisualBox>
 
