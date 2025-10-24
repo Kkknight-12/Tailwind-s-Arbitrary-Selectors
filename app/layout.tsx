@@ -6,7 +6,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Tailwind Arbitrary Selectors: Complete Visual Guide",
-  description: "Master Tailwind CSS arbitrary selectors with 12 interactive patterns. Learn to style third-party HTML, markdown content, and library components without custom CSS. Live examples with [&_selector]:utility syntax.",
+  description:
+    "Master Tailwind CSS arbitrary selectors with 12 interactive patterns. Learn to style third-party HTML, markdown content, and library components without custom CSS. Live examples with [&_selector]:utility syntax.",
   keywords: [
     "tailwind css",
     "arbitrary selectors",
@@ -21,13 +22,16 @@ export const metadata: Metadata = {
   authors: [{ name: "Knight" }],
   creator: "Knight",
   publisher: "Knight",
-  metadataBase: new URL("https://guide-to-tailwind-arbitrary-selecto.vercel.app"),
+  metadataBase: new URL(
+    "https://guide-to-tailwind-arbitrary-selecto.vercel.app",
+  ),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title: "Tailwind Arbitrary Selectors: Complete Visual Guide",
-    description: "Master Tailwind CSS arbitrary selectors with 12 interactive patterns. Style third-party HTML without custom CSS.",
+    description:
+      "Master Tailwind CSS arbitrary selectors with 12 interactive patterns. Style third-party HTML without custom CSS.",
     url: "https://guide-to-tailwind-arbitrary-selecto.vercel.app",
     siteName: "Tailwind Arbitrary Selectors Guide",
     locale: "en_US",
@@ -44,7 +48,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Tailwind Arbitrary Selectors: Complete Visual Guide",
-    description: "Master Tailwind CSS arbitrary selectors with 12 interactive patterns. Style third-party HTML without custom CSS.",
+    description:
+      "Master Tailwind CSS arbitrary selectors with 12 interactive patterns. Style third-party HTML without custom CSS.",
     images: ["/og-image.png"],
     creator: "@mayank",
   },
