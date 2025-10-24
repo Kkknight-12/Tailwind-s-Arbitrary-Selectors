@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "Tailwind Arbitrary Selectors: Complete Visual Guide",
     description: "Master Tailwind CSS arbitrary selectors with 12 interactive patterns. Style third-party HTML without custom CSS.",
     images: ["/og-image.png"],
-    creator: "@yourusername",
+    creator: "@mayank",
   },
   robots: {
     index: true,
