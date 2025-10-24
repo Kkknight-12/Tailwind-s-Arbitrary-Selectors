@@ -14,12 +14,6 @@ import {
   Pattern11,
   Pattern12,
 } from "@/app/patterns/";
-import { DemoBlock } from "@/components/DemoBlock";
-import { VisualBox } from "@/components/VisualBox";
-import { InteractiveDemo } from "@/components/InteractiveDemo";
-import { BeforeAfter } from "@/components/BeforeAfter";
-import { CodeExample } from "@/components/CodeExample";
-import { cn } from "@/lib/utils";
 
 export default function Home() {
   return (
